@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const csvUrl = 'https://raw.githubusercontent.com/andreidincaBeia/T4.2-Medical-Applications/35189588daf570e870e14ba0bc65012b883c04f0/T4.2%20-%20Medical%20Applications.csv';
+    const csvUrl = 'https://raw.githubusercontent.com/andreidincaBeia/T4.2-Medical-Applications/main/T4.2%20-%20Medical%20Applications.csv';
 
     fetch(csvUrl)
         .then(response => response.text())
