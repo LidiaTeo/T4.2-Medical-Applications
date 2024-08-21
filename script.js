@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Papa.parse(csvText, {
                 header: true,
                 complete:  function(results) {
-                    const appsData = results.data.filter(app => app['Name of aplication'] && app['Icon App Link'] && app['Description'] && app['Link Google Play'] && app['Website'] && app['Link AppStore']); // Filter out invalid rows
+                    const appsData = results.data.filter(app => app['Name of application'] && app['Icon App Link'] && app['Description'] && app['Link Google Play'] && app['Website'] && app['Link AppStore']); // Filter out invalid rows
                     const appContainer = document.getElementById('appContainer');
 
                     appsData.forEach(app => {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         const appName = document.createElement('div');
                         appName.classList.add('app-name');
-                        appName.textContent = app['Name of aplication'];
+                        appName.textContent = app['Name of application'];
                         appDetails.appendChild(appName);
 
                         const appDescription = document.createElement('div');
